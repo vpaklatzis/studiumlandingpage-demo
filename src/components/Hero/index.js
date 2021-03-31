@@ -1,11 +1,31 @@
 import React from 'react';
-import { HeroContainer } from './HeroElements';
+import { motion } from 'framer-motion';
+import studyOne from '../../images/g10.svg';
+import { 
+    HeroContainer, 
+    HeroSection, 
+    HeroColumnLeft, 
+    HeroColumnRight, 
+    HeroBtn, 
+    HeroLogo, 
+    HeroPara,
+    HeroImage 
+} from './HeroElements';
 
 const Hero = () => {
     return (
-        <HeroContainer>
-            
-        </HeroContainer>
+        <HeroSection>
+            <HeroContainer>
+                <HeroColumnLeft>
+                    <HeroLogo>Studium</HeroLogo>
+                    <HeroPara>The new studying app every uni student needs!</HeroPara>
+                    <HeroBtn to="signup">Get Started</HeroBtn> 
+                </HeroColumnLeft>
+                <HeroColumnRight>
+                    <HeroImage src={studyOne} alt='study' />
+                </HeroColumnRight>
+            </HeroContainer>
+        </HeroSection>
     )
 }
 
