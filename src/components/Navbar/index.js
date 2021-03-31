@@ -12,6 +12,8 @@ import {
     NavBtnLink 
 } from './NavbarElements';
 
+/* Navbar Structure using React Styled Components */
+
 const Navbar = () => {
     return (
         <>

@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
+/* Navbar Styled Elements */
+
 export const Nav = styled.nav`
     background: #000;
     height: 80px;
