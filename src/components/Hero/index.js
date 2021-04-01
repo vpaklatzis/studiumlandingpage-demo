@@ -24,7 +24,7 @@ const Hero = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, de
                         <TextWrapper>
                             <TopLine>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
-                            <Subtitle darktext={darkText}>{description}</Subtitle>
+                            <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
                                 <Button 
                                     to="home" 
@@ -32,7 +32,7 @@ const Hero = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, de
                                     duration={500} 
                                     spy={true} 
                                     primary={primary ? 1 : 0}
-                                    dark={dark ? 1 : 0}
+                                    dark={dark ? 0 : 1}
                                     >{buttonLabel}</Button>
                             </BtnWrap>
                         </TextWrapper>

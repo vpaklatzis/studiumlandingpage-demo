@@ -24,7 +24,7 @@ const Info = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, de
                         <TextWrapper>
                             <TopLine>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
-                            <Subtitle darktext={darkText}>{description}</Subtitle>
+                            <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
                                 <Button 
                                     to="home" 

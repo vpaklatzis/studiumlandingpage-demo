@@ -12,7 +12,7 @@ export const Button = styled(Link)`
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
-    background: ${({primary}) => (primary ? '#01BF71' : '#010606')};
+    background: ${({primary}) => (primary ? '#5390d9' : '#010606')};
     padding: 1rem 3rem;
     font-size: 1rem;
     font-weight: bold;

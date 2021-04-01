@@ -12,9 +12,9 @@ export const HeroContainer = styled.div`
 export const HeroWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: 700px;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
@@ -25,8 +25,8 @@ export const HeroRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
-    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2' 'col1'` : `'col1 col2'`)};
-
+    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+    
     @media screen and (max-width: 768px) {
         grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
     }
@@ -51,7 +51,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: #01bf71;
+    color: #5390d9;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -73,7 +73,6 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-    max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
