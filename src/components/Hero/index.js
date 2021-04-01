@@ -50,7 +50,7 @@ const Hero = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, de
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                            <Img src={img} alt={alt}/>
+                                <Img src={img} alt={alt}/>
                             </ImgWrap>
                         </Column2>
                     </HeroRow>

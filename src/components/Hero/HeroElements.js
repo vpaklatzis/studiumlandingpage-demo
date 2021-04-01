@@ -13,7 +13,7 @@ export const HeroContainer = styled.div`
 export const HeroWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 700px;
+    height: 600px;
     width: 100%;
     max-width: 1400px;
     margin-right: auto;
@@ -52,7 +52,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: #5390d9;
+    color: #FA696D;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;

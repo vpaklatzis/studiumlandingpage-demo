@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 700px;
+    height: 500px;
     width: 100%;
     max-width: 1400px;
     margin-right: auto;
@@ -51,7 +51,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: #5390d9;
+    color: #FA696D;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -81,10 +81,6 @@ export const Subtitle = styled.p`
     text-align: right;
     color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
 
-    @media screen and (max-width: 768px) {
-        max-width: 440px;
-        
-    }
 `;
 
 export const BtnWrap = styled.div`

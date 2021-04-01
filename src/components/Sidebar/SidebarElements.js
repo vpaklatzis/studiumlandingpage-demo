@@ -62,19 +62,40 @@ export const SidebarLink = styled(LinkScroll)`
     cursor: pointer;
 
     &:hover {
-        color: #5390d9;
+        color: #FA696D;
         transition: 0.2s ease-in-out;
     }
 `;
 
 export const SideBtnWrap = styled.div`
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 `;
 
 export const SidebarRoute = styled.div`
     border-radius: 50px;
-    background: #5390d9;
+    background: #fff;
+    white-space: nowrap;
+    padding: 16px 64px;
+    color: #FA696D;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #FA696D;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin: 4px 0px;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+    }
+`;
+
+export const SidebarRouteSignUp = styled.div`
+    border-radius: 50px;
+    background: #FA696D;
     white-space: nowrap;
     padding: 16px 64px;
     color: #fff;

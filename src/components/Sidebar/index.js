@@ -7,7 +7,8 @@ import {
     SidebarMenu, 
     SidebarLink, 
     SideBtnWrap, 
-    SidebarRoute 
+    SidebarRoute, 
+    SidebarRouteSignUp
 } from './SidebarElements';
 
 /* Sidebar Structure using React Styled Components */
@@ -23,18 +24,19 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to="about" onClick={toggle}>
                         About
                     </SidebarLink>
-                    <SidebarLink to="discover" onClick={toggle}>
-                    Discover
-                    </SidebarLink>
                     <SidebarLink to="services" onClick={toggle}>
                         Services
                     </SidebarLink>
-                    <SidebarLink to="Sign Up" onClick={toggle}>
-                        Sign Up
+                    <SidebarLink to="billing" onClick={toggle}>
+                        Billing
+                    </SidebarLink>
+                    <SidebarLink to="contactus" onClick={toggle}>
+                        Contact Us
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
                     <SidebarRoute to="/signin">Sign In</SidebarRoute>
+                    <SidebarRouteSignUp to="/signup">Sign Up</SidebarRouteSignUp>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

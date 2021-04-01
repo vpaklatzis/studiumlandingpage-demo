@@ -6,8 +6,7 @@ import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
     background: #f9f9f9;
-    height: 80px;
-    /*margin-top: -80px;*/
+    height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +14,7 @@ export const Nav = styled.nav`
     position: sticky;
     top 0;
     z-index: 10;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
@@ -42,6 +42,10 @@ export const NavLogo = styled(LinkRouter)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+`;
+
+export const Img = styled.img`
+    
 `;
 
 export const MobileIcon = styled.div`
@@ -73,6 +77,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 50px;
+    font-size: 1.15rem;
     align-items: center;
 `;
 
@@ -87,11 +92,11 @@ export const NavLinks = styled(LinkScroll)`
     font-weight: bold;
 
     &.active {
-        border-bottom: 3px solid #5390d9;
+        border-bottom: 3px solid #FA696D;
     }
 
     &:hover {
-        border-bottom: 3px solid #5390d9;
+        border-bottom: 3px solid #FA696D;
         transition: 0.05s ease-in-out;
     }
 `;
@@ -107,7 +112,27 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkRouter)`
     border-radius: 50px;
-    background: #5390d9;
+    background: #fff;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #FA696D;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #FA696D;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px 4px;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+    }
+`;
+
+export const NavBtnLinkSignUp = styled(LinkRouter)`
+    border-radius: 50px;
+    background: #FA696D;
     white-space: nowrap;
     padding: 10px 22px;
     color: #fff;

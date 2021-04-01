@@ -8,7 +8,7 @@ export const homeObjTwo = {
     description: 'Get access to our exclusive app that allows you to communicate with students accross the country!',
     buttonLabel: 'Get started',
     imgStart: false,
-    img: require('../../images/study1creme.svg').default,
+    img: require('../../images/study1.svg').default,
     alt: 'Study',
     dark: true,
     primary: true,
