@@ -77,7 +77,7 @@ export const SidebarRoute = styled.div`
     background: #01bf71;
     white-space: nowrap;
     padding: 16px 64px;
-    color: #010606;
+    color: #fff;
     font-size: 16px;
     outline: none;
     border: none;
@@ -87,7 +87,5 @@ export const SidebarRoute = styled.div`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
     }
 `;

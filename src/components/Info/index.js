@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from '../ButtonElement';
 import {
-    HeroContainer, 
-    HeroWrapper, 
-    HeroRow, 
+    InfoContainer, 
+    InfoWrapper, 
+    InfoRow, 
     Column1, 
     Column2, 
     TextWrapper, 
@@ -12,14 +12,14 @@ import {
     Subtitle, 
     BtnWrap, 
     ImgWrap, 
-    Img } from './HeroElements';
+    Img } from './InfoElements';
 
-const Hero = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark}) => {
+const Info = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark}) => {
     return (
         <>
-            <HeroContainer lightBg={lightBg} id={id}>
-                <HeroWrapper>
-                    <HeroRow imgStart={imgStart}>
+            <InfoContainer lightBg={lightBg} id={id}>
+                <InfoWrapper>
+                    <InfoRow imgStart={imgStart}>
                         <Column1>
                         <TextWrapper>
                             <TopLine>{topLine}</TopLine>
@@ -42,11 +42,11 @@ const Hero = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, de
                             <Img src={img} alt={alt}/>
                             </ImgWrap>
                         </Column2>
-                    </HeroRow>
-                </HeroWrapper>
-            </HeroContainer>
+                    </InfoRow>
+                </InfoWrapper>
+            </InfoContainer>
         </>
     )
 }
 
-export default Hero;
+export default Info;

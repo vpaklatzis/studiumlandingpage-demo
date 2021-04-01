@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HeroContainer = styled.div`
+export const InfoContainer = styled.div`
     color: #fff;
     background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 
@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
     }
 `;
 
-export const HeroWrapper = styled.div`
+export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
     height: 860px;
@@ -21,7 +21,7 @@ export const HeroWrapper = styled.div`
     justify-content: center;
 `;
 
-export const HeroRow = styled.div`
+export const InfoRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
