@@ -31,6 +31,7 @@ const Info = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, de
                                     smooth={true} 
                                     duration={500} 
                                     spy={true} 
+                                    exact="true"
                                     primary={primary ? 1 : 0}
                                     dark={dark ? 1 : 0}
                                     >{buttonLabel}</Button>
