@@ -123,6 +123,8 @@ export const NavBtnLink = styled(LinkRouter)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
+        transform: scale(1.02);
+        color: #ff7a7e;
     }
 `;
 
@@ -142,5 +144,7 @@ export const NavBtnLinkSignUp = styled(LinkRouter)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
+        transform: scale(1.02);
+        background: #ff7a7e;
     }
 `;

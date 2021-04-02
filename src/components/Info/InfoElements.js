@@ -4,6 +4,7 @@ import { MdKeyboardArrowLeft, MdArrowBack } from 'react-icons/md';
 export const InfoContainer = styled.div`
     color: #f9f9f9;
     background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+    padding-bottom: 30px;
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;

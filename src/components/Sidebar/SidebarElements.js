@@ -90,6 +90,8 @@ export const SidebarRoute = styled.div`
 
     &:hover {
         transition: all 0.2s ease-in-out;
+        transform: scale(1.02);
+        color: #ff7a7e;
     }
 `;
 
@@ -108,5 +110,7 @@ export const SidebarRouteSignUp = styled.div`
 
     &:hover {
         transition: all 0.2s ease-in-out;
+        transform: scale(1.02);
+        background: #ff7a7e;
     }
 `;
