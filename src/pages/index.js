@@ -3,7 +3,8 @@ import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Info from '../components/Info';
-import { homeObjTwo } from '../components/Hero/Data';
+import Services from '../components/Services';
+import { homeObjTwo, homeObjThree } from '../components/Hero/Data';
 import { homeObjOne } from '../components/Info/Data';
 
 const Home = () => {
@@ -19,6 +20,8 @@ const Home = () => {
             <Navbar toggle={toggle}/>
             <Hero {...homeObjTwo} />
             <Info {...homeObjOne} />
+            <Hero {...homeObjThree} />
+            <Services />
         </>
     )
 }

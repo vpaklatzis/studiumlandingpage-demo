@@ -2,18 +2,23 @@ import styled from 'styled-components';
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 
 export const HeroContainer = styled.div`
-    color: #fff;
+    color: #f9f9f9;
     background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
+        padding: 80px 0;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding-top: 50px;
+        padding-bottom: 0px;
     }
 `;
 
 export const HeroWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 600px;
+    height: 550px;
     width: 100%;
     max-width: 1400px;
     margin-right: auto;

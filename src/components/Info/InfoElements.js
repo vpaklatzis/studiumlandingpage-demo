@@ -1,18 +1,24 @@
 import styled from 'styled-components';
+import { MdKeyboardArrowLeft, MdArrowBack } from 'react-icons/md';
 
 export const InfoContainer = styled.div`
-    color: #fff;
+    color: #f9f9f9;
     background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
+        margin-bottom: 180px;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-bottom: 70px;
     }
 `;
 
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 500px;
+    height: 550px;
     width: 100%;
     max-width: 1400px;
     margin-right: auto;
@@ -87,6 +93,16 @@ export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
     float: right;
+`;
+
+export const ArrowBack = styled(MdArrowBack)`
+    margin-right: 8px;
+    font-size: 20px;
+`;
+
+export const ArrowLeft = styled(MdKeyboardArrowLeft)`
+    margin-right: 8px;
+    font-size: 20px;
 `;
 
 export const ImgWrap = styled.div`

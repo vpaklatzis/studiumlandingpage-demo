@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
+import { ReactComponent as Img } from "../../images/Studium.svg";
 import { 
     Nav, 
     NavbarContainer, 
     NavLogo, 
-    Img,
     MobileIcon, 
     NavMenu, 
     NavItem, 
@@ -22,7 +22,11 @@ const Navbar = ({ toggle }) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/'>
-                        <Img src="../../images/Studium.svg.default" alt="logo"/>
+                        <Img 
+                            height={150} 
+                            width={200}
+                            
+                        />
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />

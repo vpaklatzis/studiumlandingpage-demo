@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '../ButtonElement';
 import {
     InfoContainer, 
@@ -10,11 +10,20 @@ import {
     TopLine, 
     Heading, 
     Subtitle, 
-    BtnWrap, 
+    BtnWrap,
+    ArrowBack,
+    ArrowLeft,
     ImgWrap, 
     Img } from './InfoElements';
 
 const Info = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark}) => {
+    
+    const [hover, setHover] = useState(false);
+
+    const onHover = () => {
+        setHover(!hover)
+    };
+    
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -30,11 +39,13 @@ const Info = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, de
                                     to="home" 
                                     smooth={true} 
                                     duration={500} 
+                                    onMouseEnter={onHover}
+                                    onMouseLeave={onHover}
                                     spy={true} 
                                     exact="true"
                                     primary={primary ? 1 : 0}
                                     dark={dark ? 1 : 0}
-                                    >{buttonLabel}</Button>
+                                    >{hover ? <ArrowBack /> : <ArrowLeft /> } {buttonLabel}</Button>
                             </BtnWrap>
                         </TextWrapper>
                         </Column1>
