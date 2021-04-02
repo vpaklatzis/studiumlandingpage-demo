@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
-import { ReactComponent as Img } from "../../images/Studium.svg";
+import Studium from "../../images/Studium.png";
+import { animateScroll as scroll } from 'react-scroll';
 import { 
     Nav, 
     NavbarContainer, 
@@ -11,38 +12,40 @@ import {
     NavLinks, 
     NavBtn, 
     NavBtnLink,
-    NavBtnLinkSignUp
+    NavBtnLinkSignUp,
+    Img
 } from './NavbarElements';
 
 /* Navbar Structure using React Styled Components */
 
 const Navbar = ({ toggle }) => {
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>
-                        <Img 
-                            height={150} 
-                            width={200}
-                            
-                        />
+                    <NavLogo to='/' onClick={toggleHome}>
+                        <Img src={Studium} alt="logo"/>
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="about">About</NavLinks>
+                            <NavLinks to="about" smooth={true} spy={true} duration={500} exact='true'>About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="services">Services</NavLinks>
+                            <NavLinks to="services" smooth={true} spy={true} duration={500} exact='true'>Services</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="billing">Billing</NavLinks>
+                            <NavLinks to="billing" smooth={true} spy={true} duration={500} exact='true'>Billing</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="contactus">Contact us</NavLinks>
+                            <NavLinks to="contactus" smooth={true} spy={true} duration={500} exact='true'>Contact us</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>

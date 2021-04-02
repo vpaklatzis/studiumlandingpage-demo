@@ -8,11 +8,11 @@ export const InfoContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
-        margin-bottom: 180px;
+        margin-bottom: 130px;
     }
 
     @media screen and (max-width: 480px) {
-        margin-bottom: 70px;
+        padding-bottom: 0px;
     }
 `;
 

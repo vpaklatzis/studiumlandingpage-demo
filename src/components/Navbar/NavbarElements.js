@@ -5,7 +5,7 @@ import { Link as LinkScroll } from 'react-scroll';
 /* Navbar Styled Elements */
 
 export const Nav = styled.nav`
-    background: #f9f9f9;
+    background #f9f9f9;
     height: 65px;
     display: flex;
     justify-content: center;
@@ -25,11 +25,15 @@ export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 60px;
     z-index: 1;
     width: 100%;
     padding: 0 24px;
     max-width: 1100px;
+
+    @media screen and (max-width: 768px) {
+        transition: 0.8s all ease;
+    }
 `;
 
 export const NavLogo = styled(LinkRouter)`
@@ -64,7 +68,6 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
 
     @media screen and (max-width: 906px) {
         display: none;
@@ -147,4 +150,9 @@ export const NavBtnLinkSignUp = styled(LinkRouter)`
         transform: scale(1.02);
         background: #ff7a7e;
     }
+`;
+
+export const Img = styled.img`
+    width: 150px;
+    height: 30px;
 `;
