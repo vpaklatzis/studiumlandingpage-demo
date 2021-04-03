@@ -10,11 +10,7 @@ export const Container = styled.div`
     top: 0;
     z-index: 0;
     overflow: hidden;
-    background: linear-gradient(
-        108deg,
-        rgba(1, 147, 86, 1) 0%,
-        rgba(10, 201, 122, 1) 100%
-    );
+    background: #f9f9f9;
 `;
 
 export const FormWrap = styled.div`
@@ -30,7 +26,7 @@ export const FormWrap = styled.div`
 
 export const Icon = styled(Link)`
     margin-left: 32px;
-    margin-top; 32px;
+    margin-top:32px;
     text-decoration: none;
     color: #FA696D;
     font-weight: 700;
@@ -62,8 +58,8 @@ export const Form = styled.form`
     display: grid;
     margin: 0 auto;
     padding: 88px 32px;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(154,160,185,.4), 0 15px 40px rgba(166,173,201,.4);
 
     @media screen and (max-width: 400px) {
         padding: 32px 32px;
@@ -73,32 +69,37 @@ export const Form = styled.form`
 export const FormH1 = styled.h1`
     margin-bottom: 40px;
     color: #FA696D;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
     text-align: center;
 `;
 
 export const FormLabel = styled.label`
     margin-bottom: 8px;
-    font-size: 14px;
+    font-size: 16px;
     color: #FA696D;
 `;
 
 export const FormInput = styled.input`
     padding: 16px 16px;
     margin-bottom: 32px;
-    border: none;
+    border: 1px solid #FA696D;
     border-radius: 4px;
 `;
 
 export const FormButton = styled.button`
-    background: #f9f9f9;
+    background: #FA696D;
     padding: 16px 0;
     border: none;
     border-radius: 4px;
-    color: #FA696D;
-    font-size: 20px;
+    color: #f9f9f9;
+    font-size: 18px;
     cursor: pointer;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #ff7a7e;
+    }
 `;
 
 export const Text = styled.span`
@@ -106,4 +107,9 @@ export const Text = styled.span`
     margin-top: 24px;
     color: #FA696D;
     font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
 `;
