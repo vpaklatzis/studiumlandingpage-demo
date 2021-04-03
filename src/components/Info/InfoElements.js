@@ -3,7 +3,7 @@ import { MdKeyboardArrowLeft, MdArrowBack } from 'react-icons/md';
 
 export const InfoContainer = styled.div`
     color: #f9f9f9;
-    background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+    background: ${({ lightBg }) => (lightBg ? '#f5f3f4' : '#010606')};
     padding-bottom: 30px;
 
     @media screen and (max-width: 768px) {
@@ -19,7 +19,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 550px;
+    height: 500px;
     width: 100%;
     max-width: 1400px;
     margin-right: auto;

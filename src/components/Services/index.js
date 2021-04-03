@@ -1,7 +1,8 @@
 import React from 'react';
-import Social from '../../images/social.svg';
-import Tools from '../../images/tools.svg';
-import Blog from '../../images/blog.svg';
+import Search from '../../images/search.svg';
+import VideoCall from '../../images/videocall.svg';
+import Upload from '../../images/upload.svg';
+import Feed from '../../images/feed.svg';
 import { 
     ServicesContainer, 
     ServicesH1, 
@@ -18,17 +19,22 @@ const Services = () => {
             <ServicesH1>Our Services</ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>
-                    <ServicesIcon src={Social}/>
+                    <ServicesIcon src={Search}/>
                     <ServicesH2>Reduce Expenses</ServicesH2>
                     <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon src={Tools}/>
+                    <ServicesIcon src={VideoCall}/>
                     <ServicesH2>Reduce Expenses</ServicesH2>
                     <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon src={Blog}/>
+                    <ServicesIcon src={Upload}/>
+                    <ServicesH2>Reduce Expenses</ServicesH2>
+                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Feed}/>
                     <ServicesH2>Reduce Expenses</ServicesH2>
                     <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
                 </ServicesCard>
