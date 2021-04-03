@@ -50,7 +50,7 @@ export const FormContent = styled.div`
 `;
 
 export const Form = styled.form`
-    background: #f9f9f9;
+    background: #fff;
     max-width: 400px;
     height: auto;
     width: 100%;
@@ -102,7 +102,7 @@ export const FormButton = styled.button`
     }
 `;
 
-export const Text = styled.span`
+export const ForgotPassword = styled.span`
     text-align: center;
     margin-top: 24px;
     color: #FA696D;
@@ -112,4 +112,18 @@ export const Text = styled.span`
     &:hover {
         text-decoration: underline;
     }
+`;
+
+export const NotAMember = styled.span`
+    text-align: center;
+    margin-top: 8px;
+    color: #6c757d;
+    font-size: 14px;
+`;
+
+export const Register = styled.span`
+    color: #FA696D;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
 `;

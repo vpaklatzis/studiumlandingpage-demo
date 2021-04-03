@@ -11,7 +11,9 @@ import {
     Img,
     Form, 
     FormH1, 
-    Text 
+    ForgotPassword,
+    NotAMember,
+    Register
 } from './SigninElements';
 
 const SignIn = () => {
@@ -30,7 +32,8 @@ const SignIn = () => {
                             <FormLabel htmlFor='for'>Password</FormLabel>
                             <FormInput type='password' required />
                             <FormButton type='submit'>Continue</FormButton>
-                            <Text>Forgot password?</Text>
+                            <ForgotPassword>Forgot password?</ForgotPassword>
+                            <NotAMember> Not a member? <Register>Register now</Register></NotAMember>
                         </Form>
                     </FormContent>
                 </FormWrap>
