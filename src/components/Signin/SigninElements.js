@@ -24,18 +24,18 @@ export const FormWrap = styled.div`
     }
 `;
 
-export const Icon = styled(Link)`
+export const SignInLogo = styled(Link)`
     margin-left: 32px;
-    margin-top:32px;
-    text-decoration: none;
-    color: #FA696D;
-    font-weight: 700;
-    font-size: 32px;
+    margin-top: 32px;
+    justify-self: flex-start;
+    cursor: pointer;
+    diplay: flex;
+    align-items: center;
+`;
 
-    @media screen and (max-width: 480px) {
-        margin-left: 16px;
-        margin-top: 8px;
-    }
+export const Img = styled.img`
+    width: 150px;
+    height: 30px;
 `;
 
 export const FormContent = styled.div`

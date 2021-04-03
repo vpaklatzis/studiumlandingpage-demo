@@ -37,15 +37,11 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkRouter)`
-    color: #000;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.75rem;
     diplay: flex;
     align-items: center;
     margin-left: 24px;
-    font-weight: bold;
-    text-decoration: none;
 `;
 
 export const MobileIcon = styled.div`

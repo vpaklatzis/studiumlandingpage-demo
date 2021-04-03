@@ -1,4 +1,5 @@
 import React from 'react';
+import Studium from "../../images/Studium.png";
 import { 
     FormButton, 
     FormContent, 
@@ -6,7 +7,8 @@ import {
     FormLabel, 
     FormWrap, 
     Container, 
-    Icon, 
+    SignInLogo, 
+    Img,
     Form, 
     FormH1, 
     Text 
@@ -17,7 +19,9 @@ const SignIn = () => {
         <>
             <Container>
                 <FormWrap>
-                    <Icon to="/">Studium</Icon>
+                    <SignInLogo to='/'>
+                        <Img src={Studium} alt="logo"/>
+                    </SignInLogo>
                     <FormContent>
                         <Form action='#'>
                             <FormH1>Sign in</FormH1>
