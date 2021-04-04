@@ -36,7 +36,7 @@ const Hero = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, de
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
                                 <Button 
-                                    to="home" 
+                                    to="/signup" 
                                     onMouseEnter={onHover}
                                     onMouseLeave={onHover}
                                     smooth={true} 

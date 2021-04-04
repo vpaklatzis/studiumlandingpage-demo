@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 export const Button = styled(Link)`
     border-radius: 50px;
@@ -17,6 +17,7 @@ export const Button = styled(Link)`
     font-size: 1rem;
     font-weight: bold;
     box-shadow: 0 5px 10px rgba(154,160,185,.6), 0 15px 40px rgba(166,173,201,.6);
+    text-decoration: none;
     
     &:hover {
         transition: all 0.2s ease-in-out;

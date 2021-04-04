@@ -36,7 +36,7 @@ const Info = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, de
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
                                 <Button 
-                                    to="home" 
+                                    to="/" 
                                     smooth={true} 
                                     duration={500} 
                                     onMouseEnter={onHover}
