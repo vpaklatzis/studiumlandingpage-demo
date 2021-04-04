@@ -39,9 +39,9 @@ const Hero = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, de
                                     to="/signup" 
                                     onMouseEnter={onHover}
                                     onMouseLeave={onHover}
-                                    smooth={true} 
+                                    smooth='true' 
                                     duration={500} 
-                                    spy={true} 
+                                    spy='true' 
                                     primary={primary ? 1 : 0}
                                     dark={dark ? 0 : 1}
                                     >{buttonLabel} {hover ? <ArrowForward /> : <ArrowRight />}</Button>

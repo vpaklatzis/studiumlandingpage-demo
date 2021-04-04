@@ -20,23 +20,23 @@ const Services = () => {
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Search}/>
-                    <ServicesH2>Reduce Expenses</ServicesH2>
-                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
+                    <ServicesH2>Find Your Study Buddy</ServicesH2>
+                    <ServicesP>Apply filters based on your needs and select your study buddy among a list of University students</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={VideoCall}/>
-                    <ServicesH2>Reduce Expenses</ServicesH2>
-                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
+                    <ServicesH2>Make a Video Call</ServicesH2>
+                    <ServicesP>Chat with your study buddy, arrange a meeting time and hop into a video call room</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Upload}/>
-                    <ServicesH2>Reduce Expenses</ServicesH2>
-                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
+                    <ServicesH2>Upload Documents</ServicesH2>
+                    <ServicesP>Keep your notes and online studying material in one place</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Feed}/>
-                    <ServicesH2>Reduce Expenses</ServicesH2>
-                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
+                    <ServicesH2>Check Your Daily Feed</ServicesH2>
+                    <ServicesP>We provide the most valuable info to University students</ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>

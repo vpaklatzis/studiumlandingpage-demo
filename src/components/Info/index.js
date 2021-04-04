@@ -37,11 +37,11 @@ const Info = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, de
                             <BtnWrap>
                                 <Button 
                                     to="/" 
-                                    smooth={true} 
+                                    smooth="true" 
                                     duration={500} 
                                     onMouseEnter={onHover}
                                     onMouseLeave={onHover}
-                                    spy={true} 
+                                    spy="true" 
                                     exact="true"
                                     primary={primary ? 1 : 0}
                                     dark={dark ? 1 : 0}

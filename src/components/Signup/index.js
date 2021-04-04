@@ -23,7 +23,7 @@ const SignUp = () => {
                     </SignUpLogo>
                     <FormContent>
                         <Form action='#'>
-                            <FormH1>Sign up</FormH1>
+                            <FormH1>Sign up and get notified on launch!</FormH1>
                             <FormLabel htmlFor='for'>Email</FormLabel>
                             <FormInput type='email' required />
                             <FormButton type='submit'>Sign up</FormButton>
